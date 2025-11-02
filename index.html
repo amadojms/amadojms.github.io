@@ -1,45 +1,168 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Ajms Soft</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.3/css/bulma.min.css">
-    </head>
-    <body>
-        <section class="hero is-danger is-medium">
-            <div class="hero-head">
-                <header class="nav">
-                    <div class="container">
-                        <div class="nav-left">
-                            <a href="#" class="nav-item">
-                                <img src="assets/img/logo.png" alt="">
-                            </a>
-                        </div>
-                        <div class="nav-right nav-menu">
-                            <a href="http://www.facebook.com/AmadoJesusS" target="_blank" class="nav-item">Facebook</a>
-                            <span class="nav-item">
-                                <a href="http://www.facebook.com/AmadoJesusS" target="_blank" class="button is-danger is-inverted">
-                                    <span class="icon">
-                                        <i class="fa fa-youtube"></i>
-                                    </span>
-                                    <span>Youtube</span>
-                                </a>
-                            </span>
-                        </div>
-                    </div>
-                </header>
-            </div>
-            <div class="hero-body">
-                <div class="container has-text-centered">
-                    <h1 class="title">
-                        Trailer del canal de AJMS Soft
-                    </h1>
-                </div>
-            </div>
-            
-        </section>
-    </body>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Amado Martín — Consultoría Tecnológica</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom small accents */
+    .accent { background: linear-gradient(90deg,#06b6d4,#7c3aed); -webkit-background-clip: text; color: transparent; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+  <header class="bg-white shadow-sm">
+    <div class="max-w-4xl mx-auto px-6 py-6 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 bg-gradient-to-br from-sky-400 to-violet-600 rounded-lg flex items-center justify-center text-white font-bold">AM</div>
+        <div>
+          <h1 class="text-lg font-semibold">Amado Martín</h1>
+          <p class="text-sm text-gray-500">Consultoría tecnológica · Automatización · Web</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex items-center gap-4 text-sm">
+        <a href="#servicios" class="hover:underline">Servicios</a>
+        <a href="#paquetes" class="hover:underline">Paquetes</a>
+        <a href="#contacto" class="hover:underline">Contacto</a>
+      </nav>
+      <div class="md:hidden">
+        <button id="menuBtn" class="p-2 rounded-md bg-slate-100">≡</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 py-10">
+    <section class="bg-white rounded-2xl shadow p-8 mb-8">
+      <div class="md:flex md:gap-8">
+        <div class="md:flex-1">
+          <h2 class="text-2xl font-bold leading-tight">Transforma tareas repetitivas en tiempo para vender</h2>
+          <p class="mt-4 text-gray-600">Soy <span class="font-semibold">Amado Martín</span>, desarrollador fullstack y consultor. Ayudo a pequeñas empresas y emprendedores a <span class="accent">automatizar procesos</span>, construir sitios web funcionales y ahorrar horas de trabajo diario con soluciones prácticas y económicas.</p>
+
+          <ul class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <li class="rounded-lg border border-gray-100 p-3">
+              <strong>Automatizaciones</strong>
+              <p class="text-sm text-gray-500">Formularios → CRM, WhatsApp → respuestas automáticas, n8n</p>
+            </li>
+            <li class="rounded-lg border border-gray-100 p-3">
+              <strong>Web + Integraciones</strong>
+              <p class="text-sm text-gray-500">Sitios conectados a bases de datos, pagos y paneles de control</p>
+            </li>
+            <li class="rounded-lg border border-gray-100 p-3">
+              <strong>Capacitación</strong>
+              <p class="text-sm text-gray-500">Transferencia de conocimiento para que tu equipo use las herramientas</p>
+            </li>
+            <li class="rounded-lg border border-gray-100 p-3">
+              <strong>Soporte</strong>
+              <p class="text-sm text-gray-500">Paquetes mensuales para mantener todo en marcha</p>
+            </li>
+          </ul>
+
+        </div>
+        <div class="md:w-56 md:flex-none mt-6 md:mt-0">
+          <div class="p-4 rounded-xl bg-gradient-to-br from-sky-50 to-violet-50 border border-gray-100">
+            <h3 class="text-sm font-medium text-gray-700">Oferta rápida</h3>
+            <p class="mt-3 text-2xl font-bold">Diagnóstico 30 min</p>
+            <p class="text-sm text-gray-500 mt-1">Gratis o $200 MXN según disponibilidad</p>
+            <a href="#contacto" class="mt-4 inline-block w-full text-center px-4 py-2 bg-sky-600 text-white rounded-md">Solicitar diagnóstico</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="mb-8">
+      <h3 class="text-xl font-semibold mb-4">Servicios destacados</h3>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="p-4 bg-white rounded-lg shadow-sm">
+          <h4 class="font-semibold">Automatización básica</h4>
+          <p class="text-sm text-gray-500 mt-2">Conectar formularios y Google Sheets, notificaciones por correo/WhatsApp.</p>
+          <p class="mt-4 font-bold">$2,000 – $4,000</p>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow-sm">
+          <h4 class="font-semibold">Automatización avanzada (IA)</h4>
+          <p class="text-sm text-gray-500 mt-2">Bots con IA para respuestas, integración CRM, procesamiento de datos.</p>
+          <p class="mt-4 font-bold">$5,000 – $12,000</p>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow-sm">
+          <h4 class="font-semibold">Sitio web + formulario</h4>
+          <p class="text-sm text-gray-500 mt-2">Sitio responsive con formulario conectado a automatización.</p>
+          <p class="mt-4 font-bold">$4,000 – $10,000</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="paquetes" class="mb-8">
+      <h3 class="text-xl font-semibold mb-4">Paquetes recomendados</h3>
+      <div class="bg-white rounded-lg shadow overflow-hidden">
+        <div class="grid md:grid-cols-3 divide-x">
+          <div class="p-5">
+            <h5 class="font-bold">Starter</h5>
+            <p class="text-sm text-gray-500 mt-2">Diagnóstico + 1 automatización básica</p>
+            <p class="mt-4 text-2xl font-extrabold">$3,500</p>
+            <ul class="mt-3 text-sm text-gray-600">
+              <li>1 mes soporte</li>
+              <li>1 integración</li>
+            </ul>
+          </div>
+          <div class="p-5">
+            <h5 class="font-bold">Pro</h5>
+            <p class="text-sm text-gray-500 mt-2">Sitio web + 2 automatizaciones + panel</p>
+            <p class="mt-4 text-2xl font-extrabold">$8,900</p>
+            <ul class="mt-3 text-sm text-gray-600">
+              <li>2 meses soporte</li>
+              <li>Capacitación</li>
+            </ul>
+          </div>
+          <div class="p-5">
+            <h5 class="font-bold">Mantenimiento</h5>
+            <p class="text-sm text-gray-500 mt-2">Soporte continuo y mejoras</p>
+            <p class="mt-4 text-2xl font-extrabold">$1,800 / mes</p>
+            <ul class="mt-3 text-sm text-gray-600">
+              <li>Monitorización</li>
+              <li>Actualizaciones</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proceso" class="mb-8">
+      <h3 class="text-xl font-semibold mb-4">Proceso de trabajo</h3>
+      <ol class="list-decimal pl-5 space-y-2 text-gray-600">
+        <li>Diagnóstico rápido (30 min)</li>
+        <li>Propuesta con alcance y precio</li>
+        <li>Implementación en sprints pequeños</li>
+        <li>Entrega, capacitación y soporte</li>
+      </ol>
+    </section>
+
+    <section id="contacto" class="bg-white rounded-lg shadow p-6">
+      <h3 class="text-xl font-semibold mb-3">Contacto</h3>
+      <p class="text-sm text-gray-600">Listo para trabajar juntos. Reserva tu diagnóstico — respondo rápido por WhatsApp.</p>
+      <div class="mt-4 grid md:grid-cols-2 gap-4">
+        <div>
+          <p class="text-sm text-gray-500">Correo</p>
+          <a href="mailto:amadojms@gmail.com" class="text-sky-600 font-medium">amadojms@gmail.com</a>
+        </div>
+        <div>
+          <p class="text-sm text-gray-500">WhatsApp</p>
+          <a href="https://wa.me/9982579625" class="text-sky-600 font-medium">+52 998 257 9625</a>
+        </div>
+      </div>
+      <div class="mt-6 flex gap-3">
+        <a href="#" class="px-4 py-2 bg-sky-600 text-white rounded-md">Reservar diagnóstico</a>
+        <a href="#" class="px-4 py-2 border border-slate-200 rounded-md">Descargar PDF</a>
+      </div>
+    </section>
+
+    <footer class="mt-8 text-center text-sm text-gray-500">
+      <p>© Amado Martín · Consultoría tecnológica · Hecho con Tailwind</p>
+    </footer>
+  </main>
+
+  <script>
+    // simple mobile menu
+    const btn = document.getElementById('menuBtn');
+    btn && btn.addEventListener('click', () => alert('Usa el menú de navegación en desktop.'));
+  </script>
+</body>
 </html>
